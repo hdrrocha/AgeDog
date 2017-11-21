@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgeDog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put your age dog for convert in age human:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4F-hd-oDD">
+                                <rect key="frame" x="16" y="235" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JkW-N1-unY"/>
+                                    <constraint firstAttribute="width" constant="343" id="r5V-AC-W6m"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="yj5-G3-Kr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1TY-kk-af6">
+                                <rect key="frame" x="16" y="264" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Eu-vA-5Sl"/>
+                                    <constraint firstAttribute="width" constant="343" id="akT-Ou-Iqo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="z3c-XX-dmA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YL-oM-Ub9">
+                                <rect key="frame" x="16" y="321" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0ef-C7-yr9"/>
+                                    <constraint firstAttribute="height" constant="30" id="TGi-O2-FRo"/>
+                                    <constraint firstAttribute="width" constant="343" id="Y1w-Mt-Lof"/>
+                                </constraints>
+                                <state key="normal" title="SHOW AGE">
+                                    <color key="titleColor" red="0.0" green="0.68204551935195923" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonConvertAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEt-ej-9hu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRR-TD-6Vo">
+                                <rect key="frame" x="165" y="429" width="45" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="JrR-Cv-JLD"/>
+                                    <constraint firstAttribute="height" constant="95" id="jel-2o-BK5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" tag="-1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro-1" highlightedImage="cachorro.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7v-61-unO">
+                                <rect key="frame" x="67" y="50" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="OwR-i7-idm"/>
+                                    <constraint firstAttribute="width" constant="240" id="R37-qJ-TBy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.68177513332523976" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JRR-TD-6Vo" firstAttribute="top" secondItem="8YL-oM-Ub9" secondAttribute="bottom" constant="25" id="0dn-QW-Ci6"/>
+                            <constraint firstItem="V7v-61-unO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="2Xi-3m-vra"/>
+                            <constraint firstItem="8YL-oM-Ub9" firstAttribute="centerX" secondItem="JRR-TD-6Vo" secondAttribute="centerX" id="6Pf-yY-AHu"/>
+                            <constraint firstItem="P4F-hd-oDD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9aG-YS-Pv5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8YL-oM-Ub9" secondAttribute="trailing" constant="16" id="Azo-zS-a8U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRR-TD-6Vo" secondAttribute="trailing" constant="153" id="D0c-AQ-nHN"/>
+                            <constraint firstItem="JRR-TD-6Vo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fqc-F6-1E3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P4F-hd-oDD" secondAttribute="trailing" constant="16" id="I5L-2s-MMl"/>
+                            <constraint firstItem="JRR-TD-6Vo" firstAttribute="top" secondItem="8YL-oM-Ub9" secondAttribute="bottom" constant="36" id="QtS-4t-cXZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1TY-kk-af6" secondAttribute="trailing" constant="16" id="TqE-39-X2z"/>
+                            <constraint firstItem="JRR-TD-6Vo" firstAttribute="top" secondItem="8YL-oM-Ub9" secondAttribute="bottom" constant="8" symbolic="YES" id="UIE-PR-8aJ"/>
+                            <constraint firstItem="1TY-kk-af6" firstAttribute="centerX" secondItem="8YL-oM-Ub9" secondAttribute="centerX" id="Vpc-ty-Rke"/>
+                            <constraint firstItem="V7v-61-unO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="XaY-IO-01b"/>
+                            <constraint firstItem="8YL-oM-Ub9" firstAttribute="top" secondItem="1TY-kk-af6" secondAttribute="bottom" constant="26" id="cuh-fp-oYu"/>
+                            <constraint firstItem="8YL-oM-Ub9" firstAttribute="top" secondItem="1TY-kk-af6" secondAttribute="bottom" constant="27" id="gAz-Aq-QkO"/>
+                            <constraint firstItem="JRR-TD-6Vo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="hWb-48-FTC"/>
+                            <constraint firstItem="P4F-hd-oDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ifK-ea-qTS"/>
+                            <constraint firstItem="P4F-hd-oDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oQc-8U-f5J"/>
+                            <constraint firstItem="1TY-kk-af6" firstAttribute="top" secondItem="P4F-hd-oDD" secondAttribute="bottom" constant="8" symbolic="YES" id="pCN-tg-zfK"/>
+                            <constraint firstItem="JRR-TD-6Vo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="vcz-g8-JUG"/>
+                            <constraint firstItem="1TY-kk-af6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wv9-vk-cdZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JRR-TD-6Vo" secondAttribute="bottom" constant="213" id="yVb-Ki-TAK"/>
+                            <constraint firstItem="1TY-kk-af6" firstAttribute="top" secondItem="P4F-hd-oDD" secondAttribute="bottom" constant="16" id="yzh-FS-Pyi"/>
+                            <constraint firstItem="8YL-oM-Ub9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z5s-yF-JpH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRR-TD-6Vo" secondAttribute="trailing" constant="16" id="z9t-At-pWC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V7v-61-unO" secondAttribute="trailing" constant="68" id="zB2-Ly-0IV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JRR-TD-6Vo" secondAttribute="bottom" constant="118" id="zf0-KT-TYe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fielAgeDog" destination="1TY-kk-af6" id="5if-Jf-bhs"/>
+                        <outlet property="labelLegendAge" destination="JRR-TD-6Vo" id="tX3-JS-GKH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cachorro-1" width="421" height="404"/>
+        <image name="cachorro.png" width="421" height="404"/>
+    </resources>
+</document>
